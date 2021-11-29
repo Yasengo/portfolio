@@ -68,6 +68,8 @@ html{
     text-transform: capitalize;
     padding: 0.4rem 0.7rem;
 }
+
+/* ===================== hamburger manubar =============== */
 .hamburger-menubar{
     display:none;
     height: 3.3rem;
@@ -106,6 +108,9 @@ html{
         margin-right: 1.5rem;
         cursor: pointer;
         position: relative;
+        padding: 0.6rem;
+        border: 0.2rem solid var(--blackcolor);
+        border-radius: 45%;
 }
 body.dark{
     background: #3d3838;
@@ -124,6 +129,9 @@ body.dark .hamburger-menubar {
 }
 body.dark .hamburger-menubar .bar{
     background: var(--lightwhite);
+}
+body.dark #checkbox{
+    border-color: var(--lightwhite);
 }
 /* ================== End light/darl mode =============== */
 
