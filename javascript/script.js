@@ -10,7 +10,7 @@ window.onscroll = () => {
     navbar.classList.remove('active2');
     
 }
-
+// ================= light/dark mode 
 const text =  document.querySelector('.text');
 const checkbox  = document.getElementById('checkbox');
 
