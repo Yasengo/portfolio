@@ -119,31 +119,27 @@ body.dark{
 body.dark .main-navigationbar{
     background: var(--blackcolor);
 }
-body.dark a{
-    color: var(--lightwhite);
-}
-body.dark i{
-    color: #fff;
-}
-body.dark .hamburger-menubar {
-    border-color: var(--whitecolor);
-}
-body.dark .hamburger-menubar .bar{
-    background: var(--lightwhite);
-}
-body.dark #checkbox{
-    border-color: var(--lightwhite);
-}
 body.dark .about{
     background: var(--blackcolor);
 }
+body.dark #checkbox{
+    border-color: var(--wwhitecolor);
+}
+body.dark .hamburger-menubar{
+    border-color: var(--wwhitecolor);
+}
+body.dark .hamburger-menubar .bar{
+    background: var(--wwhitecolor);
+}
+body.dark a,
+body.dark i,
 body.dark .about p,
 body.dark .about a,
 body.dark .about h1{
     color: var(--wwhitecolor);
 }
 body.dark .about-maincontainer{
-    border-color: #fff;
+    border-color: rgb(173, 163, 163);
 }
 /* ================== End light/darl mode =============== */
 
@@ -215,7 +211,6 @@ body.dark .about-maincontainer{
     margin-top: 6.5rem;
     padding: 2rem 0;
     border-top: 0.2rem solid #000;
-    border-bottom:0.2rem solid#000;
 }
 .about-maincontainer .figure {
     width: 100%;
@@ -236,7 +231,7 @@ body.dark .about-maincontainer{
 }
 .figure-des .social-sites{
     position: relative;
-    top: 7rem;
+    top: 5.5rem;
     text-align: center;
 }
 .figure-des .social-sites a{
