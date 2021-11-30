@@ -134,6 +134,17 @@ body.dark .hamburger-menubar .bar{
 body.dark #checkbox{
     border-color: var(--lightwhite);
 }
+body.dark .about{
+    background: var(--blackcolor);
+}
+body.dark .about p,
+body.dark .about a,
+body.dark .about h1{
+    color: var(--wwhitecolor);
+}
+body.dark .about-maincontainer{
+    border-color: #fff;
+}
 /* ================== End light/darl mode =============== */
 
 /* ===================== fixed background =============== */
@@ -185,10 +196,62 @@ body.dark #checkbox{
     color: var(--lightpink);
 }
 
-.work{
+
+
+
+
+
+.about{
     min-height: 100vh;
-    background: var(--watergreen);
+    background:#F6E6CB;
+    padding: 2.5rem 7%;
+
 }
+.about-maincontainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 6.5rem;
+    padding: 2rem 0;
+    border-top: 0.2rem solid #000;
+    border-bottom:0.2rem solid#000;
+}
+.about-maincontainer .figure {
+    width: 100%;
+    height: 100%;
+}
+.about-maincontainer .figure img{
+    width: 100%;
+    height: 100%;
+}
+.about-maincontainer .figure-des h1{
+    display: block;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+.about-maincontainer .figure-des p{
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+.figure-des .social-sites{
+    position: relative;
+    top: 7rem;
+    text-align: center;
+}
+.figure-des .social-sites a{
+    font-size: 2.3rem;
+    margin: 0 1.4rem;
+    color: var(--blackcolor);
+}
+
+
+
+
+
+
+
+
 
 /* ==================== mediaQueries ================ */
 @media(max-width:760px){
@@ -220,5 +283,20 @@ body.dark #checkbox{
     .main-navigationlinks.active2{
         clip-path:polygon(0 0 , 100% 0, 100% 100%, 0 100%) ;
     }
+    .about-maincontainer{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    .about-maincontainer .figure{
+        padding:1.5rem ;
 
+    }
+
+    
+}
+@media(max-width:460px){
+    .about-maincontainer .figure{
+        padding: 0;
+    }
+    
 }
