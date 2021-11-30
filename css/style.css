@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +6,7 @@
     list-style: none;
     text-transform: none;
     text-decoration: none;
+    font-family: 'Vollkorn', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -17,6 +18,7 @@ html{
     --blackcolor:#191A19;
     --lightblack:#2D2424;
     --lightwhite:#EFE3D0;
+    --wwhitecolor:#DBE6FD;
     --blackwhite:#423F3E;
     --lightpink:#D83A56;
     --watergreen:#3A6351;
@@ -40,7 +42,6 @@ html{
 }
 .main-navigationlinks{
     display: flex;
-    flex-wrap: wrap;
 }
 .main-navigationlinks li{
     margin-left: 1.1rem;
@@ -72,8 +73,8 @@ html{
 /* ===================== hamburger manubar =============== */
 .hamburger-menubar{
     display:none;
-    height: 3.3rem;
-    width: 4.4rem;
+    height: 3.4rem;
+    width: 4.5rem;
     background: none;
     border: 0.11rem solid #000;
     border-radius: 0.4rem;
@@ -87,7 +88,7 @@ html{
     width: 3rem;
     background: var(--blackcolor);
     padding: 0.1rem 0;
-    margin: 0.6rem 0.6rem;
+    margin:0.6rem ;
     transition: 0.4s ease-out;
 } 
 .hamburger-menubar.active .bar:nth-child(1){
@@ -135,10 +136,65 @@ body.dark #checkbox{
 }
 /* ================== End light/darl mode =============== */
 
+/* ===================== fixed background =============== */
+.home{
+    min-height: 100vh;
+    padding: 3rem 7%;
+}
+.home figure img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+.home-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    top: 18rem;
+    left: 0.8rem;
+}
+.home-container .home-row{
+    padding: 0.5rem 1rem;
+    width: 42rem;
+}
+.home-container .home-row h1{
+    font-size: 3.4rem;
+    color: var(--wwhitecolor);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 0.4rem;
 
+}
+.home-container .home-row h1::first-letter{
+    font-size:4.5rem ;
+}
+.home-container .home-row p{
+    color:var(--wwhitecolor);
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 0.5rem;
+}
+.home-container .home-row p::first-letter{
+    font-size: 2.3rem;
+    color: var(--lightpink);
+}
+
+.work{
+    min-height: 100vh;
+    background: var(--watergreen);
+}
 
 /* ==================== mediaQueries ================ */
 @media(max-width:760px){
+    html{
+        font-size: 55.5%;
+    }
     .hamburger-menubar{
         display: block;
     }
@@ -156,7 +212,7 @@ body.dark #checkbox{
         transition: 0.4s ease-in-out;
     }
     .main-navigationlinks li{
-        margin: 20px 0;
+        margin: 1.5rem 0;
     }
     .main-navigationlinks li a{
         background: none;
