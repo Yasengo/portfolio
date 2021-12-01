@@ -28,6 +28,10 @@ a{
     --skybluecolor:#00BCD4;
     
 }
+img{
+    display: block;
+    width: 100%;
+}
 
 .main-navigationbar{
     position: fixed;
