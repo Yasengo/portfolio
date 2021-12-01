@@ -3,15 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-transform: none;
-    text-decoration: none;
     font-family: 'Vollkorn', sans-serif;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 62.5%;
+}
+a{
+    text-decoration: none;
 }
 :root{
     --whitecolor:#FEF9EF;
@@ -38,10 +38,11 @@ html{
     align-items: center;
     background: var(--lightwhite);
     z-index: 1000;
-    outline: 0.3rem solid var(--purplecolor);
+    outline: .3rem solid var(--purplecolor);
 }
 .main-navigationlinks{
     display: flex;
+    list-style: none;
 }
 .main-navigationlinks li{
     margin-left: 1.1rem;
@@ -51,13 +52,13 @@ html{
     content: '';
     position: absolute;
     width: 100%;
-    height: 0.3rem;
+    height: .3rem;
     margin-bottom: -0.2rem;
     background: var(--skybluecolor);
     left: 0;
     bottom: 0;
     transform: scale(0,1);
-    transition: 0.3s;
+    transition: .3s;
 }
 .main-navigationlinks li:hover::before{
     transform: scale(1,1);
@@ -67,7 +68,7 @@ html{
     color: var(--blackcolor);
     font-size: 1.9rem;
     text-transform: capitalize;
-    padding: 0.4rem 0.7rem;
+    padding: .4rem .7rem;
 }
 
 /* ===================== hamburger manubar =============== */
@@ -76,8 +77,8 @@ html{
     height: 3.4rem;
     width: 4.5rem;
     background: none;
-    border: 0.11rem solid #000;
-    border-radius: 0.4rem;
+    border: .11rem solid #000;
+    border-radius: .4rem;
     margin-left:1.6rem;
     text-align: center;
     cursor: pointer;
@@ -87,18 +88,18 @@ html{
     height:0.1rem;
     width: 3rem;
     background: var(--blackcolor);
-    padding: 0.1rem 0;
-    margin:0.6rem ;
-    transition: 0.4s ease-out;
+    padding: .1rem 0;
+    margin:.6rem ;
+    transition: .4s ease-out;
 } 
 .hamburger-menubar.active .bar:nth-child(1){
-    transform: translateY(0.9rem);  
+    transform: translateY(.9rem);  
  }
  .hamburger-menubar.active .bar:nth-child(2){
      opacity: 0;
  }
  .hamburger-menubar.active .bar:nth-child(3){
-     transform: translateY(-0.9rem);  
+     transform: translateY(-.9rem);  
   }
 /* ==================== End menubar =================== */
 
@@ -109,8 +110,8 @@ html{
         margin-right: 1.5rem;
         cursor: pointer;
         position: relative;
-        padding: 0.6rem;
-        border: 0.2rem solid var(--blackcolor);
+        padding: .6rem;
+        border: .2rem solid var(--blackcolor);
         border-radius: 45%;
 }
 body.dark{
@@ -164,10 +165,10 @@ body.dark .about-maincontainer{
     position: relative;
     flex-wrap: wrap;
     top: 18rem;
-    left: 0.8rem;
+    left: .8rem;
 }
 .home-container .home-row{
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     width: 42rem;
 }
 .home-container .home-row h1{
@@ -175,7 +176,7 @@ body.dark .about-maincontainer{
     color: var(--wwhitecolor);
     text-transform: uppercase;
     font-weight: 500;
-    padding: 0 0.4rem;
+    padding: 0 .4rem;
 
 }
 .home-container .home-row h1::first-letter{
@@ -185,7 +186,7 @@ body.dark .about-maincontainer{
     color:var(--wwhitecolor);
     font-size: 1.8rem;
     font-weight: 400;
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
 }
 .home-container .home-row p::first-letter{
     font-size: 2.3rem;
@@ -209,7 +210,7 @@ body.dark .about-maincontainer{
     gap: 1.5rem;
     margin-top: 6.5rem;
     padding: 2rem 0;
-    border-top: 0.2rem solid #000;
+    border-top: .2rem solid #000;
 }
 .about-maincontainer .figure {
     width: 100%;
@@ -266,7 +267,7 @@ body.dark .about-maincontainer{
         align-items: center;
         justify-content: center;
         clip-path: polygon(0 0, 100% 0,  100% 0, 0 0);
-        transition: 0.4s ease-in-out;
+        transition: .4s ease-in-out;
     }
     .main-navigationlinks li{
         margin: 1.5rem 0;
