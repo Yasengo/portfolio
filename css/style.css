@@ -18,7 +18,7 @@ a{
     --blackcolor:#191A19;
     --lightblack:#2D2424;
     --lightwhite:#EFE3D0;
-    --wwhitecolor:#DBE6FD;
+    --wwhitecolor:#DEEEEA;
     --blackwhite:#423F3E;
     --lightpink:#D83A56;
     --watergreen:#3A6351;
@@ -195,12 +195,9 @@ body.dark .about-maincontainer{
 
 
 
-
-
-
 .about{
     min-height: 100vh;
-    background:#F6E6CB;
+    background:var(--wwhitecolor);
     padding: 2.5rem 15%;
 }
 .about-maincontainer{
