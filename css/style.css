@@ -13,6 +13,9 @@ html{
 a{
     text-decoration: none;
 }
+p{
+    font-size: 1.6rem;
+}
 :root{
     --whitecolor:#FEF9EF;
     --blackcolor:#191A19;
@@ -125,7 +128,8 @@ body.dark{
 body.dark .main-navigationbar{
     background: var(--blackcolor);
 }
-body.dark .about{
+body.dark .about,
+body.dark .project{
     background: var(--blackcolor);
 }
 body.dark #checkbox{
@@ -140,6 +144,7 @@ body.dark .hamburger-menubar .bar{
 body.dark a,
 body.dark i,
 body.dark .about p,
+body.dark .project p,
 body.dark .about a,
 body.dark .about h1{
     color: var(--wwhitecolor);
@@ -247,7 +252,7 @@ body.dark .about-maincontainer{
 .project{
     min-height: 100vh;
     background: var(--wwhitecolor);
-    padding: 3rem 5%;
+    padding: 2rem;
 }
 .projects-container{
     display:flex;
@@ -255,15 +260,16 @@ body.dark .about-maincontainer{
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-
 }
 .projects-container figure{
-    width:30rem;
+    width:33rem;
     position: relative;
 }
 figure img{
     width: 100%;
+
 }
+
 
 
 
@@ -313,6 +319,9 @@ figure img{
 
 
 @media(max-width:460px){
+    html{
+        font-size: 50.5%;
+    }
     .about-maincontainer .figure{
         padding: 0; 
 }
