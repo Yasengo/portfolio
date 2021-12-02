@@ -10,6 +10,10 @@ html{
     overflow-x: hidden;
     font-size: 62.5%;
 }
+/*
+body{
+    text-align: center;
+}*/
 a{
     text-decoration: none;
 }
@@ -93,7 +97,7 @@ img{
 }
 .hamburger-menubar .bar{
     display: block;
-    height:0.1rem;
+    height:2px;
     width: 3rem;
     background: var(--blackcolor);
     padding: .1rem 0;
@@ -157,7 +161,7 @@ body.dark .about-maincontainer{
 /* ===================== fixed background =============== */
 .home{
     min-height: 100vh;
-    padding: 3rem 7%;
+    padding: 3rem 1%;
 }
 .home figure img{
     position: fixed;
@@ -171,7 +175,7 @@ body.dark .about-maincontainer{
 .home-container{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+   /* align-items: center;*/
     position: relative;
     flex-wrap: wrap;
     top: 18rem;
@@ -182,19 +186,24 @@ body.dark .about-maincontainer{
     width: 42rem;
 }
 .home-container .home-row h1{
-    font-size: 3.4rem;
-    color: var(--wwhitecolor);
+    font-size: 4.4rem;
+    color:#00B8A9;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 0 .4rem;
+    padding: 0 ;
 
+}
+
+.home-container .home-row h1 span{
+    color: var(--lightpink);
+    font-weight: bolder;
 }
 .home-container .home-row h1::first-letter{
     font-size:4.5rem ;
 }
 .home-container .home-row p{
     color:var(--wwhitecolor);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
     padding: 0 .5rem;
 }
@@ -320,10 +329,23 @@ figure img{
 
 @media(max-width:460px){
     html{
-        font-size: 50.5%;
+        font-size:48.5%;
     }
     .about-maincontainer .figure{
         padding: 0; 
+    }
 }
 
+@media(max-width:340px){
+    htnl{
+        font-size: 40.5%;
+    }
+    .home-container .home-row h1{
+        font-size: 2.4rem;
+        padding: 0;
+
+    
+    }
 }
+
+
