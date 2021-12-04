@@ -121,8 +121,8 @@ ul,a{
     font-size: 2rem;
     font-weight: bolder;
     padding: 0;
-    color: rgb(13, 14, 14);
-    background:yellowgreen;
+    color: rgb(3, 16, 16);
+    background:rgb(232, 233, 229);
     cursor: pointer;
 }
 .slider__carousel .carousel__actions button #carousel__button__prev{
