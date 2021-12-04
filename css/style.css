@@ -10,10 +10,6 @@ html{
     overflow-x: hidden;
     font-size: 62.5%;
 }
-/*
-body{
-    text-align: center;
-}*/
 a{
     text-decoration: none;
 }
@@ -35,12 +31,6 @@ p{
     --skybluecolor:#00BCD4;
     
 }
-/*
-img{
-    display: block;
-    width: 100%;
-}*/
-
 .main-navigationbar{
     position: fixed;
     width: 100%;
@@ -191,7 +181,6 @@ body.dark .about-maincontainer{
     text-transform: uppercase;
     font-weight: 500;
     padding: 0 ;
-
 }
 
 .home-container .home-row h1 span{
@@ -277,7 +266,6 @@ body.dark .about-maincontainer{
 }
 figure img{
     width: 100%;
-
 }
 
 /*============== footer ============== */
@@ -285,7 +273,6 @@ figure img{
 footer{
     min-height: 70vh;
     background: var(--lightblack);
-    
 }
 
 

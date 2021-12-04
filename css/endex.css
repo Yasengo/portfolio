@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background:transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.navlink{
+    display: flex;
+
+}
+.slider__carousel{
+    overflow: hidden;
+    position: relative;  
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+
+}
+
+.slider__carousel .carousel__item,
+.slider__carousel .carousel__item--hidden{
+    display: none;
+}
+ .slider__carousel .carousel__item img{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider__carousel .carousel__item figcaption {
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+}
+
+.slider__carousel .carousel__item--visible{
+    display: block;
+}
+.slider__carousel .carousel__actions{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider__carousel .carousel__actions button{
+    border: .2rem solid #000;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0;
+    color: rgb(13, 14, 14);
+    background:yellowgreen;
+    cursor: pointer;
+}
+.slider__carousel .carousel__actions button #carousel__button__prev{
+    margin-left: 4px;
+    background: yellowgreen;
+}
+.slider__carousel .carousel__actions button #carousel__button__next{
+    margin-right: 4px;
+}
+.work{
+    min-height: 100vh;
+    background: red;
+}
+
+
+
+
+
+/*
+@media(max-width:460px){
+    .slider__carousel .carousel__actions button{
+
+    }
+
+}
