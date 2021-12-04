@@ -40,7 +40,6 @@ document.
     }
     updateSlidePosition();   
 }
-
 // for navigatiion menu bar
 let menu = document.querySelector('#main-menu__bar');
 let navbar = document.querySelector('.main-navigation__links');
