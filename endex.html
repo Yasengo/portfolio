@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/endex.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <h1>looooooooohooooo</h1>
-            <ul class="navlink">
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-            </ul>
-        </nav>
-    </header>
-           <div class="slider__carousel ">
+		<nav class="main-navigation__bar">
+		 <div class="main-navigation__logo">
+		 	<a href="#home">dark<span>side</span></a>
+		 </div>
+			<ul class="main-navigation__links">
+				<li><a href="#home">home</a></li>
+				<li><a href="#product">product</a></li>
+				<li><a href="#home">shop</a></li>
+				<li><a href="#home">about</a></li>
+				<li><a href="#home">contact</a></li>
+			</ul>
+			<div id="main-menu__bar" class="fa fa-bars"></div>
+		</nav>
+	</header>
+           <section class="slider__carousel ">
 
             <div class="carousel__item carousel__item--visible">
                 <img src="image/img15.jpg" alt="">
@@ -50,14 +54,35 @@
                 </figcaption>
             </div>
             <div class="carousel__actions">
-                <button id="carousel__button--prev" >&#8678;</button><!--aria-label="Previous slide"-->
-                <button id="carousel__button--next" >&#8680;</button><!--aria-label="Next slide"-->
+                <button id="carousel__button--prev" >&#10229;</button><!--aria-label="Previous slide"-->
+                <button id="carousel__button--next" >&xrarr;</button><!--aria-label="Next slide"-->
             </div>
+        </section>
+        
 
-        </div>
-<section class="work">
+    <section class="about" id="about">   
+        <div class="about-maincontainer">
+            <div class="figure">            
+                <img src="image/img15.jpg" alt="">
+            </div>
+                <div class="figure-des">
+                  <h1>About me</h1>
+                  <p>Lorem ipsum dolor sit amet conse ctetur adipisi cing elit. Aspernatur ipsum, 
+                    quod, harum rem ea repudiandae veritatis expedita, delectus accusantium dolore
+                    laboriosam quae quibusdam corrupti. Sed asperiores deserunt incidunt minus modi
+                    rerum dolor suscipit explicabo neque natus eius, maiores dicta ab quisquam quasi
+                    maxime saepe, eaque nesciunt corporis sint praesentium ex!</p>
 
-</section>
+                    <div class="social-sites">
+                        <a href="" class="fab fa-codepen"></a>
+                        <a href="" class="fab fa-twitter"></a>
+                        <a href="" class="fab fa-github"></a>
+                        <a href="" class="fab fa-linkedin"></a>
+                    </div>
+                </div>        
+        </div>  
+    </section>
+
 <script src="javascript/endex.js"></script>
     
 </body>
