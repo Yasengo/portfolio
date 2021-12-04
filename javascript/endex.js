@@ -6,15 +6,13 @@ document.
   getElementById('carousel__button--next')
   .addEventListener("click", function() {
      moveToNextSlide();
-
   });
+
   document.
   getElementById('carousel__button--prev')
   .addEventListener("click", function() {
       moveToPrevSlide();
-
   });
-
 
   function updateSlidePosition() {
       for (let slide of slides) {
@@ -32,7 +30,6 @@ document.
           slidePosition++;
       }
       updateSlidePosition();
-
   }
   function moveToPrevSlide(){
       updateSlidePosition();
@@ -41,6 +38,14 @@ document.
     } else {
         slidePosition--;
     }
-    updateSlidePosition();
-      
+    updateSlidePosition();   
+}
+
+// for navigatiion menu bar
+let menu = document.querySelector('#main-menu__bar');
+let navbar = document.querySelector('.main-navigation__links');
+
+menu.onclick = () => {
+	menu.classList.toggle('fa-times');
+	navbar.classList.toggle('active');
 }
