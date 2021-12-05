@@ -5,6 +5,8 @@
 }
 html{
     font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 ul,a{
 	list-style: none;
@@ -17,7 +19,7 @@ ul,a{
 .main-navigation__bar{
 	position: fixed;
 	width: 100%;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	background: #F7F7F7;
 	box-shadow: -1rem .7rem 2rem #000;
 	display: flex;
@@ -97,12 +99,13 @@ ul,a{
 
 }
 .slider__carousel .carousel__item figcaption h2{
-	font-size: 4rem;
+	font-size: 6rem;
 	color: var(--wwhitecolor);
 }
 .slider__carousel .carousel__item figcaption p{
 	font-size: 1.8rem;
 	color: var(--wwhitecolor);
+	padding-right:  3rem;
 }
 
 .slider__carousel .carousel__item--visible{
@@ -151,49 +154,53 @@ ul,a{
 
 .about{
     min-height: 100vh;
-    background:var(--wwhitecolor);
-    padding: 2.5rem 15%;
-
+    background:#F0E9D2;
+    padding: 2.5rem 5%;
+	padding-top: 4rem;
 }
 .about-maincontainer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 6.5rem;
-    padding: 2rem 0;
-    border-top: .2rem solid #000;
+	display: flex;
+	justify-content:center;
+	align-items: center;  
+	gap: 2rem;
+	margin-top: 5rem;
 }
-.about-maincontainer .figure {
-    width: 100%;
-    height: 100%;
+.about-maincontainer figure{
+	width: 55rem;
+	max-width: 100%;
+	height: 40rem;  
+	max-height: 100%;
 }
-.about-maincontainer .figure img{
-    width: 100%;
-    height: 100%;
+.about-maincontainer figure  img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius:100% 0% 95% 5% / 4% 100% 0% 96%  ;
 }
-.about-maincontainer .figure-des h1{
-    display: block;
-    font-size: 3.5rem;
-    text-decoration: underline;
+.class-desc{
+	width: 55rem;
 }
-.about-maincontainer .figure-des p{
-    font-size: 1.5rem;
-    line-height: 2.7rem;
+.class-desc h2{
+	text-transform: capitalize;
+	font-size: 2.3rem;
 }
-.figure-des .social-sites{
-    position: relative;
-    top: 5.5rem;
-    text-align: center;
+.class-desc p{
+	font-size: 1.4rem;
+	color: 000;
+	font-family: 'philosopherregular';
+	line-height: 1.2;
 }
-.figure-des .social-sites a{
-    font-size: 2.3rem;
-    margin: .6rem 1.4rem;
-    color: var(--blackcolor);
-}
-/* ========== media quries  ============= */
+
+/* ========== media quries  =============*/
+
 @media(max-width:760px){
-    html{
+		html{
+			font-size: 55.5%;
+		}
+	} 
+
+@media(max-width:760px){
+   html{
         font-size: 55.5%;
     }
     #main-menu__bar{
@@ -254,15 +261,16 @@ ul,a{
 	.main-navigation__logo a{
 		font-size:3rem ;
 	}
+	.about-maincontainer{
+		
+		flex-wrap: wrap;  
+		gap: 1rem;
+	}
+	.about-maincontainer figure{
+		height: auto;
+	}
 
-    .about-maincontainer{
-        grid-template-columns: repeat(1, 1fr);
-    
-    }
-    .about-maincontainer .figure{
-        padding:1.5rem;
 
-    }
 }
 
 
@@ -271,7 +279,5 @@ ul,a{
     html{
         font-size:48.5%;
     }
-    .about-maincontainer .figure{
-        padding: 0; 
-    }
+
 }
