@@ -1,15 +1,15 @@
-
 /* ==== semi bold ==== */
 @font-face {
     font-family: 'bellotabold';
-    src:url('../fonts/Bellota-Bold-webfont.woff') format('woff');
+    src: url('../fonts/Bellota-Bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
+
 /* ========= font for logo ========= */
 @font-face {
     font-family: 'perspective_sans_blackregular';
-    src:url('../fonts/persanbk-webfont.woff') format('woff');
+    src: url('../fonts/persanbk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,16 +22,25 @@
     font-style: normal;
 
 }
+
 /* ========= pararapg ======= */
 @font-face {
     font-family: 'philosopherregular';
-    src:url('../fonts/Philosopher-Regular-webfont.woff') format('woff');
+    src: url('../fonts/Philosopher-Regular-webfont.woff') format('woff');
     font-style: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'bearpawregular';y
+    src: url('../fonts/..BEARPAW_-webfont.woff') format('woff');
+        font-weight: bold;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src:url('../fonts/berkshireswash-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 
 }
-
-
-
-
-
