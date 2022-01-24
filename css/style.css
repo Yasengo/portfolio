@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;800;900&display=swap');
-*{
+
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Vollkorn', sans-serif;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 62.5%;
 }
+
 a{
     text-decoration: none;
 }
@@ -123,7 +123,7 @@ body.dark .main-navigationbar{
     background: var(--blackcolor);
 }
 body.dark .about,
-body.dark .project{
+body.dark .contact{
     background: var(--blackcolor);
 }
 body.dark #checkbox{
@@ -138,7 +138,8 @@ body.dark .hamburger-menubar .bar{
 body.dark a,
 body.dark i,
 body.dark .about p,
-body.dark .project p,
+body.dark .contact p,
+body.dark .contact h3,
 body.dark .about a,
 body.dark .about h1{
     color: var(--wwhitecolor);
@@ -150,8 +151,8 @@ body.dark .about-maincontainer{
 
 /* ===================== fixed background =============== */
 .home{
-    min-height: 100vh;
     padding: 3rem 1%;
+    height: 100vh;
 }
 .home figure img{
     position: fixed;
@@ -163,110 +164,60 @@ body.dark .about-maincontainer{
     z-index: -3;
 }
 .home-container{
-    display: flex;
-    justify-content: flex-start;
-   /* align-items: center;*/
-    position: relative;
-    flex-wrap: wrap;
-    top: 18rem;
-    left: .8rem;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
 .home-container .home-row{
     padding: .5rem 1rem;
-    width: 42rem;
 }
+
 .home-container .home-row h1{
-    font-size: 4.4rem;
-    color:#00B8A9;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 0 ;
+    font-size: 8rem;
+    font-family: 'berkshire_swashregular';
+    color: var(--lightwhite);
+    /* text-shadow: -1px 1px 0 #4d4d4d,
+	1px 1px 0 #c63d2b,
+	1px -1px 0 #42afac,
+	-1px -1px 0 #c6c23f; */
+    text-shadow:   0px -6px 0 #212121,  
+    0px -6px 0 #212121,
+    0px  6px 0 #212121,
+    0px  6px 0 #212121,
+   -6px  0px 0 #212121,  
+    6px  0px 0 #212121,
+   -6px  0px 0 #212121,
+    6px  0px 0 #212121,
+   -6px -6px 0 #212121,  
+    6px -6px 0 #212121,
+   -6px  6px 0 #212121,
+    6px  6px 0 #212121,
+   -6px  18px 0 #212121,
+    0px  18px 0 #212121,
+    6px  18px 0 #212121,
+    0 19px 1px rgba(0,0,0,.1),
+    0 0 6px rgba(0,0,0,.1),
+    0 6px 3px rgba(0,0,0,.3),
+    0 12px 6px rgba(0,0,0,.2),
+    0 18px 18px rgba(0,0,0,.25),
+    0 24px 24px rgba(0,0,0,.2),
+    0 36px 36px rgba(0,0,0,.15); 
 }
-
 .home-container .home-row h1 span{
-    color: var(--lightpink);
-    font-weight: bolder;
+    font-size: 10rem;
 }
-.home-container .home-row h1::first-letter{
-    font-size:4.5rem ;
-}
-.home-container .home-row p{
-    color:var(--wwhitecolor);
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding: 0 .5rem;
-}
-.home-container .home-row p::first-letter{
-    font-size: 2.3rem;
-    color: var(--lightpink);
-}
-/*
+.home-container .home-row h1 span::first-letter{
 
-.slider__carousel{
-    overflow: hidden;
-    position: relative;  
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    top: 0;
-    left: 0;
-
+    font-size: 10rem;
+    text-transform: capitalize;
 }
 
-.slider__carousel .carousel__item,
-.slider__carousel .carousel__item--hidden{
-    display: none;
-}
- .slider__carousel .carousel__item img{
-     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 
-}
-.slider__carousel .carousel__item figcaption {
-    font-size: 50px;
-    position: relative;
-    top: 100px;
-}
-
-.slider__carousel .carousel__item--visible{
-    display: block;
-}
-.slider__carousel .carousel__actions{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.slider__carousel .carousel__actions button{
-    border: .2rem solid #000;
-    width: 38px;
-    height: 38px;
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 0;
-    color: rgb(13, 14, 14);
-    background:yellowgreen;
-    cursor: pointer;
-}
-.slider__carousel .carousel__actions button #carousel__button__prev{
-    margin-left: 4px;
-    background: yellowgreen;
-}
-.slider__carousel .carousel__actions button #carousel__button__next{
-    margin-right: 4px;
-}
 /* ============== about section ================ */
 .about{
-    min-height: 100vh;
     background:var(--wwhitecolor);
-    padding: 2.5rem 15%;
+    padding: 2.5rem 7%;
 
 }
 .about-maincontainer{
@@ -298,6 +249,7 @@ body.dark .about-maincontainer{
 .figure-des .social-sites{
     position: relative;
     top: 5.5rem;
+    margin-bottom: 3rem; 
     text-align: center;
 }
 .figure-des .social-sites a{
@@ -309,33 +261,37 @@ body.dark .about-maincontainer{
 
 /* ================ projects section ================== */
 
-.project{
-    min-height: 100vh;
-    background: var(--wwhitecolor);
-    padding: 3rem 2%;
-    padding-top: 5rem;
-}
-.projects-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-top: 30%;}
-.projects-container figure{
-    width:33rem;
-    position: relative;
-}
-figure img{
+
+
+.contact{
     width: 100%;
+    background: var(--wwhitecolor);
+    padding: 2rem 3rem;
+
+}
+.contact h3{
+    font-size: 5rem;
+    padding-top: 4rem;
+    margin-bottom: 3.5rem;
+}
+.contact p{
+    font-size:3.5rem;
+    color:var(--blackcolor);
+    margin-top: 3.5rem;
+}
+.contact p span{
+    font-size:3rem ;
+    color: var(--lightpink);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*============== footer ============== */
 
-footer{
+/* footer{
     min-height: 70vh;
     background: var(--lightblack);
-}
+} */
 
 
 /* ==================== mediaQueries ================ */
@@ -343,6 +299,9 @@ footer{
     html{
         font-size: 55.5%;
     }
+}
+@media(max-width:760px){
+
     .hamburger-menubar{
         display: block;
     }
@@ -384,14 +343,17 @@ footer{
 
 @media(max-width:460px){
     html{
-        font-size:48.5%;
+        font-size:50.5%;
     }
     .about-maincontainer .figure{
         padding: 0; 
     }
+    .contact h3{
+        font-size: 3rem;
+    }
 }
 
-@media(max-width:340px){
+/* @media(max-width:340px){
     htnl{
         font-size: 40.5%;
     }
@@ -401,6 +363,6 @@ footer{
 
     
     }
-}
+} */
 
 
