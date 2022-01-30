@@ -150,6 +150,9 @@ body.dark .about h1{
 body.dark .about-maincontainer{
     border-color: rgb(173, 163, 163);
 }
+body.dark .home h1{
+    color: #000;
+}
 /* ================== End light/darl mode =============== 
 
 /* ===================== fixed background =============== */
