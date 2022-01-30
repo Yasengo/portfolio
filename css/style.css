@@ -35,10 +35,11 @@ p{
     position: fixed;
     width: 100%;
     height: 7.6rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--lightwhite);
+    background: #ffffff;
     z-index: 1000;
     outline: .3rem solid var(--purplecolor);
 }
@@ -67,6 +68,8 @@ p{
 }
 
 .main-navigationlinks li a{
+    font-family: 'philosopherregular';
+    font-weight: 600;
     color: var(--blackcolor);
     font-size: 1.9rem;
     text-transform: capitalize;
@@ -176,12 +179,13 @@ body.dark .about-maincontainer{
 .home-container .home-row h1{
     font-size: 8rem;
     font-family: 'berkshire_swashregular';
+    /* font-family: 'philosopherregular'; */
     color: var(--lightwhite);
     /* text-shadow: -1px 1px 0 #4d4d4d,
 	1px 1px 0 #c63d2b,
 	1px -1px 0 #42afac,
 	-1px -1px 0 #c6c23f; */
-    text-shadow:   0px -6px 0 #212121,  
+    /* text-shadow:   0px -6px 0 #212121,  
     0px -6px 0 #212121,
     0px  6px 0 #212121,
     0px  6px 0 #212121,
@@ -203,7 +207,13 @@ body.dark .about-maincontainer{
     0 18px 18px rgba(0,0,0,.25),
     0 24px 24px rgba(0,0,0,.2),
     0 36px 36px rgba(0,0,0,.15); 
+} */
+text-shadow: 0px 3px 0px #b2a98f,
+0px 14px 10px rgba(0,0,0,0.15),
+0px 24px 2px rgba(0,0,0,0.1),
+0px 34px 30px rgba(0,0,0,0.1);
 }
+
 .home-container .home-row h1 span{
     font-size: 10rem;
 }
@@ -216,7 +226,7 @@ body.dark .about-maincontainer{
 
 /* ============== about section ================ */
 .about{
-    background:var(--wwhitecolor);
+    background:var(--whitecolor);
     padding: 2.5rem 7%;
 
 }
@@ -240,6 +250,7 @@ body.dark .about-maincontainer{
 .about-maincontainer .figure-des h1{
     display: block;
     font-size: 3.5rem;
+    font-family: 'philosopherregular';
     text-decoration: underline;
 }
 .about-maincontainer .figure-des p{
@@ -265,22 +276,25 @@ body.dark .about-maincontainer{
 
 .contact{
     width: 100%;
-    background: var(--wwhitecolor);
+    background: var(--whitecolor);
     padding: 2rem 3rem;
 
 }
 .contact h3{
+    font-family: 'philosopherregular';
     font-size: 5rem;
     padding-top: 4rem;
     margin-bottom: 3.5rem;
 }
 .contact p{
     font-size:3.5rem;
+    font-family: 'philosopherregular';
+
     color:var(--blackcolor);
     margin-top: 3.5rem;
 }
 .contact p span{
-    font-size:3rem ;
+    font-size:2rem;
     color: var(--lightpink);
     text-decoration: underline;
     cursor: pointer;
