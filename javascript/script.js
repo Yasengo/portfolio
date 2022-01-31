@@ -65,3 +65,9 @@ checkbox.addEventListener('click', () => {
 //     updateSlidePosition();
       
 // }
+
+window.addEventListener('scroll', function () {
+    var navba = document.querySelector('.main-navigationbar');
+    navba.classList.toggle('sticky', window.scrollY > 0);
+
+});
