@@ -162,7 +162,8 @@ body.dark .hamburger-menubar {
 body.dark .hamburger-menubar .bar {
     background: var(--wwhitecolor);
 }
-
+body.dark .skill p,
+body.dark .skill p span,
 body.dark a,
 body.dark i,
 body.dark .about p,
@@ -313,6 +314,74 @@ body.dark .about-maincontainer {
     cursor: pointer;
 }
 
+.skill{
+    width: 100%;
+    font-family: 'philosopherregular';
+    padding: 4rem 2rem;
+}
+.skill__container{
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_des{
+    flex: 0 0 49%;
+}
+.skill__g{
+    flex: 0 0 49%;
+}
+.skill_bar_cont{
+    margin: 1rem 0;
+}
+.skill_des p span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3e106c;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+.skill_bar_cont p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: .3rem;
+    line-height: 1.8;
+}
+.skill_bar{
+    width: 100%;
+    background-color: #3A6351;
+    border-radius: 1rem;
+}
+
+.skill_bar .one{
+    padding: .8rem .5rem;
+    color: #ffffff;
+    text-align: right;
+    border-radius: 1rem;
+}
+.skill_bar .sk1{
+    width: 50%;
+    background-color: #3e106c;
+}
+.skill_bar .sk2{
+    width: 1%;
+    background-color: #3e106c;
+    
+}
+.skill_bar .sk3{
+    width: 100%;
+    background-color: #3e106c;
+}
+.skill_bar .sk4{
+    width: 90%;
+    background-color: #3e106c;
+}
+.skill_bar .sk5{
+    width: 40%;
+    background-color: #3e106c;
+}
 
 
 
@@ -364,6 +433,10 @@ body.dark .about-maincontainer {
     .about-maincontainer .figure {
         padding: 1.5rem;
 
+    }
+    .skill__container{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
