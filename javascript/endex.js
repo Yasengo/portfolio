@@ -1,15 +1,15 @@
 let slidePosition = 0;
-const slides = document.getElementsByClassName('carousel__item'); 
+const slides = document.getElementsByClassName('carousel__item');
 const totalSlides = slides.length;
 
 document.
-  getElementById('carousel__button--next')
+  getElementById('next__btn')
   .addEventListener("click", function() {
      moveToNextSlide();
   });
 
   document.
-  getElementById('carousel__button--prev')
+  getElementById('prev__btn')
   .addEventListener("click", function() {
       moveToPrevSlide();
   });
@@ -38,8 +38,10 @@ document.
     } else {
         slidePosition--;
     }
-    updateSlidePosition();   
+    updateSlidePosition();
 }
+
+
 // for navigatiion menu bar
 let menu = document.querySelector('#main-menu__bar');
 let navbar = document.querySelector('.main-navigation__links');
