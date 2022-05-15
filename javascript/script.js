@@ -71,3 +71,12 @@ window.addEventListener('scroll', function () {
     navba.classList.toggle('sticky', window.scrollY > 0);
 
 });
+
+function func(element) {
+    var currentColor = element.style.color;
+    if (currentColor == "purple"){
+        element.style.color = "green";
+    } else {
+        element.style.color = "purple";
+    }
+}
